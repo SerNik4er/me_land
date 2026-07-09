@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сергей Черненко | me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Дополнительный шрифт для заголовка -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- ШАПКА С ФОНОМ-МОНИТОРОМ                                      -->
+    <!-- ============================================================ -->
+    <header>
+        <div class="container">
+            <h1>Сергей Черненко</h1>
+            <div class="subtitle">
+                "В человеке всё должно быть прекрасно — и мысли, и дела, и стремления"
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- ОСНОВНОЙ КОНТЕНТ                                             -->
+    <!-- ============================================================ -->
+    <main>
+
+        <!-- БЛОК 1: Фото слева, текст справа -->
+        <section class="block block-left">
+            <div class="photo">
+                <img src="{{ url_for('static', filename='photo1.jpg') }}" alt="Сергей Черненко">
+            </div>
+            <div class="text">
+                <h2>Немного обо мне</h2>
+                <p>Мне <span class="highlight">33 года</span>, и я — человек, который не боится пробовать новое.</p>
+                <p>Сейчас я активно развиваюсь в сфере <span class="highlight">IT и веб-разработки</span>, но мои интересы не ограничиваются кодом. Я хочу создавать проекты, которые приносят пользу и вдохновляют людей.</p>
+            </div>
+        </section>
+
+        <!-- БЛОК 2: Фото справа, текст слева -->
+        <section class="block block-right">
+            <div class="text">
+                <h2>Мои увлечения и взгляды</h2>
+                <p>Я верю, что <span class="highlight">разностороннее развитие</span> — это не просто модное слово, а необходимость для современного человека.</p>
+                <p>Помимо программирования, я увлекаюсь <span class="highlight">историей, литературой и путешествиями</span>. Мне интересно, как устроен мир и как люди взаимодействуют друг с другом.</p>
+            </div>
+            <div class="photo">
+                <img src="{{ url_for('static', filename='photo2.jpg') }}" alt="Увлечения">
+            </div>
+        </section>
+
+        <!-- БЛОК 3: Фото слева, текст справа (опыт и профессии) -->
+        <section class="block block-left">
+            <div class="photo">
+                <img src="{{ url_for('static', filename='photo3.png') }}" alt="Опыт работы">
+            </div>
+            <div class="text">
+                <h2>Мой путь и профессии</h2>
+                <p>За плечами — <span class="highlight">разнообразный опыт</span>: от работы в продажах и логистике до администрирования и IT.</p>
+                <p>Я работал <span class="highlight">менеджером по продажам, логистом, системным администратором</span> — и каждая из этих профессий дала мне бесценные навыки: коммуникацию, управление временем, стрессоустойчивость.</p>
+                <p>Сейчас я осваиваю <span class="highlight">Python и веб-фреймворки</span>, чтобы объединить весь свой опыт в новой профессиональной главе.</p>
+            </div>
+        </section>
+
+        <!-- БЛОК 4: Фото в центре, под ним текст (цели) — ОБНОВЛЁН -->
+        <section class="block-center">
+            <div class="photo">
+                <img src="{{ url_for('static', filename='photo4.png') }}" alt="Мои цели">
+            </div>
+            <h2>Мои цели</h2>
+            <p>Я стремлюсь стать <span class="highlight">востребованным Fullstack-разработчиком</span> и создавать крутые продукты, которые решают реальные задачи людей.</p>
+            <p>В ближайших планах: углублённое изучение <span class="highlight">Flask, Django, баз данных</span> и облачных платформ (Render, PythonAnywhere).</p>
+            <p>Особый интерес вызывают <span class="highlight">нейросети и искусственный интеллект</span> — я планирую освоить их для создания умных и инновационных решений.</p>
+            <p>А ещё — создать собственный проект, который объединит людей и поможет им расти.</p>
+        </section>
+
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- ПОДВАЛ                                                       -->
+    <!-- ============================================================ -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="mailto:your.4ersernik@gmail.com">✉️ Email</a>
+                <a href="https://t.me/ser4ernik" target="_blank">💬 Telegram</a>
+                <a href="https://github.com/SerNik4er" target="_blank">🐙 GitHub</a>
+            </div>
+            <div class="copyright">
+                © 2026 Сергей Черненко · Сделано с <span>❤</span> на Python + Flask
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
