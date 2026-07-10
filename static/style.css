@@ -120,13 +120,40 @@ header .subtitle {
     font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
-    color: #b0d8b0;
+    
+    /* ИЗУМРУДНЫЙ С ПЕРЕЛИВАМИ */
+    background: linear-gradient(
+        135deg,
+        #00ff88 0%,
+        #00cc66 25%,
+        #44ffaa 50%,
+        #00ff88 75%,
+        #00cc66 100%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
     margin-top: 18px;
     padding-top: 16px;
     border-top: 2px solid rgba(0, 255, 100, 0.20);
     display: inline-block;
-    text-shadow: 0 0 30px rgba(0, 255, 100, 0.15);
     letter-spacing: 1px;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Анимация перелива */
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* --- БЛОКИ С ФОТО И ТЕКСТОМ --- */
